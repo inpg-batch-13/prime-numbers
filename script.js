@@ -1,9 +1,25 @@
 function isPrime(number) {
 
+    for (var i = 2; i < number; i++){
+        if (number % i === 0){
+          return false
+        }
+      }
+      return true
+
 }
 
-function primeNumbers(maxNumber) {
 
+
+function primeNumbers(maxNumber) {
+var result = []
+
+  for (var n = maxNumber; n > 0; n--){
+    if (isPrime(n) === true){
+      result.push(n)
+    }
+  }
+return result
 }
 
 // TEST CASES:
