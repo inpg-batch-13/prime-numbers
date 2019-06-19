@@ -14,7 +14,7 @@ function isPrime(number) {
 function primeNumbers(maxNumber) {
 var result = []
 
-  for (var n = maxNumber; n > 0; n--){
+  for (var n = 1; n <= maxNumber; n++){
     if (isPrime(n) === true){
       result.push(n)
     }
