@@ -1,9 +1,24 @@
 function isPrime(number) {
+    for (i = 2 ; i < number ; i++){
 
+        var pembagian = number % i
+        if (pembagian === 0){
+          return false
+        }
+      }
+      return true
 }
 
 function primeNumbers(maxNumber) {
-
+    var hasil = []
+for (var n = 1 ; n <= maxNumber ; n++){
+    var cek = isPrime(n)
+  
+    if (cek){
+        hasil.push(n)
+    }
+}
+return hasil
 }
 
 // TEST CASES:
