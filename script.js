@@ -1,9 +1,19 @@
-function isPrime(number) {
-
-}
-
+function isPrime (number) {
+      for ( var i = 2; i < number; i++) {
+        if ( number % i === 0) {
+          return false
+        }
+      } return true; 
+  }
+  
 function primeNumbers(maxNumber) {
-
+    var arr = [];
+    for ( var i = 1 ; i <= maxNumber; i++ ) {
+        if ( isPrime(i) === true) {
+            arr.push(i);
+        }
+    } return arr 
+    // console.log(arr);
 }
 
 // TEST CASES:
